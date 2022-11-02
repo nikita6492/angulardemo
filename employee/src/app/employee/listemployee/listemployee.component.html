@@ -1,0 +1,10 @@
+<div><h2>Total Employees displaying : {{listEmployee.length}}</h2></div>
+<mat-list role="list">
+    <mat-card class="empList" role="listitem" *ngFor="let emp of listEmployee"><mat-card-title>
+   <span class="employeeName" >{{emp.empName}}</span> </mat-card-title><mat-card-actions>|
+   <a class= "actionLink" [routerLink] ="['/employee/view',emp.empId]">View</a> |
+   <a class="actionLink" [routerLink] ="['/employee/edit',emp.empId]">Edit</a>|
+   <a class= "actionLink" [routerLink] ="['/employee/delete',emp.empId]">Delete</a> |</mat-card-actions>
+  
+</mat-card>
+  </mat-list>

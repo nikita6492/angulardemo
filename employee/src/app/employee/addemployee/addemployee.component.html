@@ -1,0 +1,35 @@
+<mat-card>
+<mat-card-title>Create New Employee</mat-card-title>
+<mat-card-content style="padding-top: 20px;">
+<form [formGroup]="addEmpForm" (submit)="createUser()">
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Employee Name</mat-label>
+          <input matInput placeholder="Employee Name" formControlName="empName">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+    </p>
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Employee Salary</mat-label>
+          <input matInput placeholder="Employee Salary" formControlName="empSal">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </p>
+
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Employee Designation</mat-label>
+          <input matInput placeholder="Employee Designation" formControlName="empDesg">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </p>
+      <button mat-raised-button color="primary">Create Employee</button>
+</form>
+</mat-card-content>
+</mat-card>

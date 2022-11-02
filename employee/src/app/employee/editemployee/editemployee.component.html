@@ -1,0 +1,30 @@
+<div *ngIf="isEmpDetailsPresent">
+<mat-card>
+    <mat-card-title>Edit Employee</mat-card-title>
+    <mat-card-content style="padding-top: 20px;">
+    <form [formGroup]="editEmpForm" (submit)=updateEmp()>
+    
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Employee Salary</mat-label>
+              <input matInput placeholder="Employee Salary" formControlName="empSal">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+          </p>
+    
+    
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Employee Designation</mat-label>
+              <input matInput placeholder="Employee Designation" formControlName="empDesg">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+          </p>
+          <button mat-raised-button color="primary">Save Employee</button>
+    </form>
+</mat-card-content>    
+    </mat-card>
+</div>
+

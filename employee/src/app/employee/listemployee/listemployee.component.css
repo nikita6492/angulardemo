@@ -1,0 +1,10 @@
+.employeeName{
+    min-width: 300px;
+}
+.actionLink{
+    padding: 10px;
+}
+.empList{
+    background-color:cornsilk;
+    margin: 10px;
+}
